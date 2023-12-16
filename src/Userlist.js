@@ -4,6 +4,7 @@ import { useState,useEffect } from 'react'
 
 const UserList = () => {
     const [data,setData]=useState([])
+// making a request from the serveur to collect data using API using axios
     useEffect(() => {
         const Data = async () => {
                 const response = await axios.get('https://jsonplaceholder.typicode.com/users');
